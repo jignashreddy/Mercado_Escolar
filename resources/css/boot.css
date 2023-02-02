@@ -1,0 +1,912 @@
+
+html, body, #app, #app>div {
+    height: 100%
+}
+
+* {
+    margin: auto
+}
+
+/* we are using the following font in our website */
+.myapp1 {
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url("../Images/Home/background_image3.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(192 192 192);
+    color: rgb(0, 0, 0);
+}
+
+
+.nav-links1 a {
+    color: rgb(0, 0, 0);
+}
+
+.li {
+    -moz-transform: none;
+    -webkit-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+
+.nav-links1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+}
+
+#login1 {
+    -moz-transform: none;
+    -webkit-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+
+#login1 a {
+    width: 100px;
+    color: rgb(0, 0, 0);
+    margin: 50px auto;
+    text-align: center;
+    border: 3px solid #838383;
+    background-color: #ffffff;
+    font-size: 19px;
+}
+
+.topbar1 {
+    display: flex;
+    gap: 1.1em;
+    font-size: 19px;
+}
+
+.topbar1 label:hover {
+    background-color: #ff6464;
+
+}
+.topbar1 label {
+    padding: 5px 14px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+.row1 {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+    padding: 20px;
+}
+
+.side1 {
+    flex: 20%;
+    background-color: #ffffffe0;
+    border: 3px solid #ff6464;
+    padding: 5px;
+}
+
+.sideborder1 {
+    padding: 0px;
+    padding-right: 5px;
+}
+
+.main1 {
+    flex: 80%;
+}
+
+/* responsive layout for mobile view */
+@media screen and (max-width: 700px) {
+    .row1 {
+        flex-direction: column;
+    }
+}
+
+.box{
+    margin: 2em;
+    color: white;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    display: flex;
+    background-color:#30363a;
+    padding: -25em;
+}
+
+
+.boxrow{
+    display: flex;
+    position: center;
+    flex-direction: row;
+}
+
+.orders_table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    max-width: 600px;
+    width: 100%
+}
+
+.orders_table th {
+    text-align: left
+}
+
+tr {
+    border-bottom: 1px solid #ccc
+}
+
+td,
+th {
+    padding: 6px
+}
+
+.leftnav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.logo {
+    background-color: #111;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.leftnav a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
+    display: block;
+}
+
+.leftnav a:hover {
+    color: #c7c7c7;
+}
+
+.leftnav p {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
+    display: block;
+    text-align: left;
+    cursor: pointer;
+}
+
+.leftnav p:hover {
+    color: #c7c7c7;
+}
+
+.main2 {
+    margin-left: 200px;
+}
+
+@media screen and (max-height: 450px) {
+    .leftnav {
+        padding-top: 15px;
+    }
+
+    .leftnav a {
+        font-size: 18px;
+    }
+}
+
+.posts{
+    background-image: radial-gradient( circle farthest-corner at 1.2% 5%,  rgba(255,94,157,1) 34.7%, rgba(255,78,6,1) 92.3% );
+}
+
+.studentDashboard h1,p{
+    text-align: center;
+}
+
+.businessDashboard h1,p{
+    text-align: center;
+}
+
+/*   admin */
+
+
+.admin{
+    background-image: url("../Images/Screen Shot 2022-10-10 at 2.38.30 PM.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height:100vh;  /* responsive height */
+}
+
+
+.leftnavadmin {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.logoadmin {
+    background-color: rgb(0, 0, 0);
+;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+
+}
+
+.leftnavadmin a {
+    padding: 6px 6px 6px;
+    padding-left: 2px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #ffffff;
+    display: block;
+}
+
+.leftnavadmin a:hover {
+    color: #f7f7f7;
+}
+
+.mainadmin {
+    margin-left: 195px;
+
+
+}
+
+@media screen and (max-height: 450px) {
+    .leftnavadmin {
+        padding-top: 15px;
+    }
+
+
+
+    .leftnavadmin a {
+        font-size: 18px;
+    }
+}
+
+
+
+
+.ul {
+    padding: 0px
+}
+
+.li {
+    display: inline-block;
+    width: auto;
+    font-size: medium;
+    text-indent: 2px;
+    color: rgba(162, 46, 46, 0.944);
+    gap: 12px;
+
+
+}
+
+
+
+.boxadmin {
+    width: 200px;
+    height: 100px;
+    color: #ffffff;
+    float: left;
+}
+
+
+.section3 {
+
+    background-color: rgb(255, 255, 255);
+
+    margin-left: 0px;
+    margin-right: 60px;
+    border-color: rgb(8, 9, 9);
+
+}
+
+.solidadmin {
+    text-indent: 500px;
+    font-style: italic;
+    text: solid;
+    color: rgb(255, 255, 255);
+}
+
+.section2 {
+    background-color: rgb(234, 234, 234);
+
+    margin-left: 0px;
+    margin-right: 700px;
+}
+
+.inline {
+    display: inline-block;
+}
+
+
+.button4 {
+
+    border: none;
+    color: rgb(20, 19, 19);
+    padding: 16px 16px;
+    font: italic;
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 16px;
+    border-radius: 2px;
+
+
+}
+
+
+@property --p {
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 0;
+}
+
+.pie {
+    --p: 20;
+    --b: 22px;
+    --c: darkred;
+    --w: 150px;
+
+
+    width: var(--w);
+    aspect-ratio: 1;
+    position: relative;
+    display: inline-grid;
+    margin: 5px;
+    place-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.pie:before,
+.pie:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+
+}
+
+.pie:before {
+    inset: 0;
+    background:
+        radial-gradient(farthest-side, var(--c) 98%, #0000) top/var(--b) var(--b) no-repeat,
+        conic-gradient(var(--c) calc(var(--p)*1%), #0000 0);
+    -webkit-mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), rgb(255, 255, 255) calc(100% - var(--b)));
+    mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), rgb(250, 250, 250) calc(100% - var(--b)));
+}
+
+.pie:after {
+    inset: calc(50% - var(--b)/2);
+    background: var(--c);
+    transform: rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
+}
+
+.animate {
+    animation: p 1s .5s both;
+}
+
+.no-round:before {
+    background-size: 0 0, auto;
+}
+
+.no-round:after {
+    content: none;
+}
+
+@keyframes p {
+    from {
+        --p: 0
+    }
+}
+
+
+
+#bar-example-6 {
+    height: 200px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+
+
+
+
+.base {
+    position: absolute;
+    bottom: 0;
+    left: -35px;
+    width: 825px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    -moz-transform: skew(45deg);
+    -o-transform: skew(45deg);
+    -webkit-transform: skew(45deg);
+}
+
+.chart-container {
+    position: relative;
+    z-index: 0;
+    margin: 100px auto 0;
+    width: 800px;
+    height: 500px;
+    /*border: solid 1px #bbb;*/
+    background-color: rgba(255, 255, 255, 0.055);
+    /*  -webkit-box-shadow: 0 8px 6px -6px #444;
+  */
+}
+
+.chart-container:after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -8px;
+    height: 15px;
+    width: 800px;
+    background-color: rgba(255, 255, 255, 0.055);
+    -moz-transform: skew(45deg);
+    -o-transform: skew(45deg);
+    -webkit-transform: skew(45deg);
+    transform: skew(45deg);
+}
+
+.chart-container>table {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -999;
+    width: 100%;
+    height: 100%;
+}
+
+.chart-container table tr td {
+    width: 100px;
+    height: 98x;
+    border: solid 1px rgba(255, 255, 255, 0.05);
+
+}
+
+.meter {
+    position: relative;
+    top: 0px;
+    left: -30px;
+    height: 500px;
+    width: 30px;
+    background-color: rgba(20, 113, 163, 0.5);
+    border-left: solid 1px rgba(255, 255, 255, 0.5);
+
+}
+
+.meter:before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -15px;
+    width: 15px;
+    height: 500px;
+    background-color: rgba(14, 81, 117, 0.9);
+    -moz-transform: skewY(45deg);
+    -o-transform: skewY(45deg);
+    -webkit-transform: skewY(45deg);
+    transform: skewY(45deg);
+}
+
+.meter:after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -8px;
+    width: 30px;
+    height: 15px;
+    background-color: rgba(13, 171, 217, 0.45);
+    -moz-transform: skewX(45deg);
+    -o-transform: skewX(45deg);
+    -webkit-transform: skewX(45deg);
+    transform: skewX(45deg);
+}
+
+.meter li {
+    position: relative;
+    list-style-type: none;
+    height: 99px;
+    border-bottom: solid 1px #0DABD9;
+}
+
+.meter li:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -30px;
+    width: 30px;
+    height: 100%;
+    border-bottom: solid 1px #0DABD9;
+    -moz-transform: skewY(45deg);
+    -o-transform: skewY(45deg);
+    -webkit-transform: skewY(45deg);
+    transform: skewY(45deg);
+}
+
+.meter li:last-child {
+    border-bottom: none;
+}
+
+.meter li:last-child:before {
+    border: 0;
+}
+
+.meter li div {
+    position: absolute;
+    left: -115px;
+    top: 0;
+    padding: 55px 0 0;
+    width: 80px;
+    color: #656565;
+    text-align: right;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+
+/* ---------------------
+  Vertical Bars
+----------------------*/
+
+.bar {
+    float: left;
+    position: absolute;
+    bottom: 0;
+    z-index: 99;
+    height: 35%;
+    width: 40px;
+    margin: 0 40px;
+    background-color: rgba(107, 255, 49, 0.35);
+}
+
+.bar:before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    bottom: 7px;
+    height: 100%;
+    width: 15px;
+    background-color: rgba(107, 255, 49, 0.25);
+    -webkit-transform: skewY(45deg);
+}
+
+.bar:after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -8px;
+    width: 40px;
+    height: 15px;
+    background-color: rgba(107, 255, 49, 0.45);
+    -moz-transform: skewX(45deg);
+    -o-transform: skewX(45deg);
+    -webkit-transform: skewX(45deg);
+    transform: skewX(45deg);
+}
+
+.two {
+    left: 12.5%;
+    height: 57%;
+}
+
+.three {
+    left: 25%;
+    height: 85%;
+}
+
+.four {
+    left: 37.5%;
+    height: 35%;
+}
+
+.five {
+    left: 50%;
+    height: 63%;
+}
+
+.six {
+    left: 62.5%;
+    height: 45%;
+}
+
+.seven {
+    left: 75%;
+    height: 15%;
+}
+
+.eight {
+    left: 87.5%;
+    height: 32%;
+}
+
+.solid1 {
+
+    font-style: italic;
+    text: solid;
+    color: rgb(255, 255, 255);
+
+
+}
+
+.D1 {
+    display: inline-block;
+    padding: 5px;
+
+}
+
+
+
+/* Full-width input fields */
+input[type=text],
+input[type=email],
+input[type=file],
+input[type=number],
+input[type=password],
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+.input[type=text]:focus,
+.input[type=email]:focus,
+input[type=file]:focus,
+input[type=number],
+input[type=password]:focus,
+textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 0px;
+}
+
+/* Set a style for all buttons */
+.button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+.psw {
+    float: right;
+}
+
+.signupbtn {
+    padding: 14px 20px;
+    background-color: green;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,
+.signupbtn {
+    float: left;
+    padding: 14px 20px;
+    width: 50%;
+}
+
+/* Add padding to container elements */
+.containeradmin {
+    padding: 50px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 400px) {
+
+    .cancelbtn,
+    .signupbtn {
+        width: 100%;
+    }
+}
+
+.colourwhite {
+    color: white;
+}
+
+.D2 {
+    text-align: left;
+    color: white;
+
+}
+
+.solid2 {
+    text-indent: 225px;
+    font-style: italic;
+    text: solid;
+    color: rgb(255, 255, 255);
+}
+
+solid3 {
+    text-indent: 12px;
+    font-style: normal;
+    text: solid;
+    color: rgb(255, 255, 255);
+}
+
+.D3 {
+    display: inline-block;
+    padding: 5px;
+
+}
+
+#pieees{
+    --p:70;
+    --c:White;
+}
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    float: center;
+    table-layout: initial;
+
+    float: left;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+#customers tr:nth-child(odd) {
+    background-color: #ddd;
+}
+
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    padding-top: 10px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+    table-layout: auto;
+
+}
+
+
+/*     */
+
+.leftnavschadmin {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.logoschadmin {
+    background-color: rgb(0, 0, 0);
+;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+
+}
+
+.leftnavschadmin a {
+    padding: 6px 6px 6px;
+    padding-left: 2px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #ffffff;
+    display: block;
+}
+
+.leftnavschadmin a:hover {
+    color: #f7f7f7;
+}
+
+.mainschadmin {
+    margin-left: 195px;
+
+
+}
+
+@media screen and (max-height: 450px) {
+    .leftnavschadmin {
+        padding-top: 15px;
+    }
+
+
+
+    .leftnavschadmin a {
+        font-size: 18px;
+    }
+}
+
+
+
+
+.ul {
+    padding: 0px
+}
+
+.li {
+    display: inline-block;
+    width: auto;
+    font-size: medium;
+    text-indent: 2px;
+    color: rgba(162, 46, 46, 0.944);
+    gap: 12px;
+
+
+}
+
+.boxschadmin {
+    width: 200px;
+    height: 100px;
+    color: #ffffff;
+    float: left;
+}
